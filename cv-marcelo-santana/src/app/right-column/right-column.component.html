@@ -1,0 +1,60 @@
+<div class="w3-twothird">
+    <div *ngFor="let subTopic of subTopics" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>{{subTopic.title}}
+        </h2>
+        <app-detailed-card *ngFor="let detail of subTopic.details" 
+            [location]="detail.location" [from]="detail.from" [to]="detail.to"
+            [abstract]="detail.abstract" [icon]="detail.icon">
+        </app-detailed-card>
+    </div>
+<!--
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+       <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>{{subTopic}}
+        </h2>
+        <app-detailed-card [location]="detail.location" [from]="detail.from" [to]="detail.to"
+            [abstract]="detail.abstract" [icon]="detail.icon">
+        </app-detailed-card>
+
+        <app-detailed-card [location]="detail.location" [from]="detail.from" [to]="detail.to"
+            [abstract]="detail.abstract" [icon]="detail.icon">
+        </app-detailed-card>
+    </div>
+
+    <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>{{subTopic}}
+        </h2>
+        <app-detailed-card [location]="detail.location" [from]="detail.from" [to]="detail.to"
+            [abstract]="detail.abstract" [icon]="detail.icon">
+        </app-detailed-card>
+        <app-detailed-card [location]="detail.location" [from]="detail.from" [to]="detail.to"
+            [abstract]="detail.abstract" [icon]="detail.icon">
+        </app-detailed-card>
+    </div>
+    
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
+        </h2>
+        <div class="w3-container">
+            <h6 class="w3-text-indigo">
+                <i class="fa fa-github fa-fw w3-margin-right"></i>
+                <a href="https://github.com/falvojr/copa-2022-android" target="_blank">falvojr/copa-2022-android</a>
+            </h6>
+            <p>{{abstract}}</p>
+            <hr>
+        </div>
+        <div class="w3-container">
+            <h6 class="w3-text-indigo">
+                <i class="fa fa-gitlab fa-fw w3-margin-right"></i>
+                <a href="https://gitlab.com/denilsonbonatti/kubernetes-projeto2-dio"
+                    target="_blank">denilsonbonatti/kubernetes-projeto2-dio</a>
+            </h6>
+            <p>{{abstract}}</p>
+        </div>
+    </div>-->
+
+    <!-- End Right Column -->
+</div>

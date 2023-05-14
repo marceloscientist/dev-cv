@@ -1,0 +1,11 @@
+<div *ngIf="location; else elseBlock">
+    <div *ngIf="location" class="w3-container">
+        <h5 class="w3-opacity"><b>{{location}}</b></h5>
+        <h6 class="w3-text-indigo"><i class={{icon}} class="fa-fw w3-margin-right"></i>{{from}} - <span
+                class="w3-tag w3-indigo w3-round">{{to}}</span></h6>
+        <p>{{abstract}}</p>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <p>{{abstract}}</p>
+</ng-template>
